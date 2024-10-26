@@ -1,0 +1,174 @@
+@import './mixins';
+
+* {
+    @include BigReset();
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+}
+
+body {
+    background-color: $primary-Color;
+    background-image: $primary-image;
+    height: fit-content;
+}
+
+nav {
+    @include FlexCenter();
+    justify-content: space-between;
+    padding: 14px 18px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background-color: $primary-Color;
+    
+
+    li, a{
+        text-decoration: none;
+        color: $primary-Text-Color;
+        display: inline;
+        font-family: $nav-Font;
+        font-size: 10px;
+        margin-right: 5px;
+
+        .Active {
+            color: $secondary-Color;
+        }
+    }
+
+
+    #phoneNavLogo {
+        @include logo();
+    }
+
+    #phoneNavActionButton {
+        @include actionBtn();
+    }
+
+    svg {
+        fill: $primary-Text-Color;
+    }
+
+    
+
+
+}
+
+header {
+    padding: 100px 30px 0;
+    color: $primary-Text-Color;
+    font-weight: 700;
+    height: fit-content;
+
+    .headerBox {
+        margin-left: -15px;
+        h1 {
+            font-size: 12px;
+            padding-bottom: 8px;
+        }
+    
+        hr {
+            border: 1px solid $secondary-Color;
+            opacity: 1;
+            width: 215px;
+            margin: 0;
+        }
+    }
+
+    
+    .galleryLayout {
+        width: min(1000px, 100%); /* Responsivna Sirina */
+        margin: 0 auto; /* Centrira layout */
+        columns: 3 100px;
+    
+        .dogPicutre {
+            width: 100%; /* Ovo omogucava slikama da se povecavaju i smanjuju same */
+            margin: 5px;
+            border-radius: 10px;
+        }
+    
+       
+    }
+    
+    
+   
+}
+
+
+
+
+
+footer {
+    background: $primary-Color;
+    padding: 20px 10px 10px;
+    height: fit-content;
+    margin-top: 40px;
+    position: sticky;
+    text-align: center;
+
+    .footerHead {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+        color: $primary-Text-Color;
+        padding-bottom: 35px;
+
+        p {
+            padding-bottom: 5px;
+        }
+
+        .footerActionBtn {
+            @include actionBtn();
+            font-weight: bolder;
+            margin-bottom: 35px;
+        }
+
+
+    }
+
+    .footerInfo {
+        color: $primary-Text-Color;
+        font-size: 7px;
+     
+        p{
+            display: inline
+        }
+        .footerLogo {
+            @include logo();
+            font-size: 7px;
+            position: absolute; //Razlog zabog kog koristim position absolute je sto display flex nece raditi jer je razmak izmedju footerContactInfo i copyright klase manji nego razmak izmedju copyright i footerLogo.
+            left: 10px;
+            bottom: 10px
+        }
+
+        .copyright {
+            position: absolute; //Razlog zabog kog koristim position absolute je sto display flex nece raditi jer je razmak izmedju footerContactInfo i copyright klase manji nego razmak izmedju copyright i footerLogo.
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            bottom: 10px
+        }
+
+       
+
+        .footerContactInfo {
+            @include FlexCenter();
+            flex-direction: column;
+            align-items: start;
+            gap: 8px;
+            position: absolute; //Razlog zabog kog koristim position absolute je sto display flex nece raditi jer je razmak izmedju footerContactInfo i copyright klase manji nego razmak izmedju copyright i footerLogo.
+            right: 10px;
+            bottom: 10px;
+
+            .footerContact {
+                @include FlexCenter();
+                gap: 8px;
+            }
+        }
+    }
+
+}

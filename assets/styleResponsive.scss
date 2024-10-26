@@ -1,0 +1,388 @@
+@import './mixins';
+
+@media (min-width:600px) {
+
+    nav {
+
+        li, a {
+            font-size: 20px;
+        }
+        #phoneNavLogo {
+            font-size: 16px;
+        }
+
+        #phoneNavActionButton {
+            font-size: 16px;
+        }
+    }
+
+    header {
+        @include FlexCenter();
+        justify-content: space-between;
+        margin-top: 100px;
+        text-align: left;
+        padding: 0 25px;
+
+        p {
+            margin: 10px 0;
+            max-width: 310px;
+        }
+
+        img {
+            width: 240px;
+            height: 190px;
+            display: inline;
+        }
+    }
+
+    .WhatWeOffer {
+        .headerWhatWeOffer {
+            font-size: 24px;
+        }
+
+        .Offer  {
+            .offerPic {
+                width: 150px;
+                height: 205px;
+            }
+
+            .offerInfo {
+                font-size: 15px;
+
+                h2 {
+                    font-size: 18px;
+                }
+
+                p {
+                    padding-right: 100px;
+                }
+            }
+        }
+    }
+
+    .WhatPeopleSay {
+        .headerWhatPeopleSay {
+            font-size: 24px;
+        }
+
+        .reviews {
+            .review {
+                .profilePic {
+                    width: 67px;
+                    height: 67px;
+                }
+
+                .reviewBox {
+                    width: 260px;
+                    height: 140px;
+
+                    img {
+                        width: 67px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footerHead {
+            font-size: 24px;
+            .footerActionBtn {
+                font-size: 16px;
+            }
+        }
+
+        .footerInfo {
+            font-size: 10px;
+            .footerLogo {
+                font-size: 16px;
+            }
+
+            .copyright {
+                width: 150px;
+            }
+
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    
+}
+
+@media (min-width:900px) {
+
+    nav {
+        #phoneNavLogo {
+            font-size: 20px;
+        }
+ 
+    }
+
+    header {
+        @include FlexCenter();
+        justify-content: space-between;
+        margin-top: 100px;
+        text-align: left;
+        padding: 0 25px;
+
+        h1 {
+            font-size: 32px;
+        }
+
+        p {
+            max-width: 400px;
+            font-size: 14px;
+        }
+
+        img {
+            width: 340px;
+            height: 240px;
+        }
+
+        #phoneHeaderActionButton {
+            font-size: 20px;
+        }
+    }
+
+    .WhatWeOffer {
+        .headerWhatWeOffer {
+            font-size: 32px;
+        }
+
+        .Offer  {
+            .offerPic {
+                width: 250px;
+                height: 305px;
+            }
+
+            .offerInfo {
+                font-size: 20px;
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    padding-right: 100px;
+                }
+            }
+        }
+    }
+
+    .WhatPeopleSay {
+        .headerWhatPeopleSay {
+            font-size: 24px;
+        }
+
+        .reviews {
+            .review {
+                .profilePic {
+                    width: 67px;
+                    height: 67px;
+                }
+
+                .reviewBox {
+                    width: 260px;
+                    height: 140px;
+
+                    img {
+                        width: 67px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        width: 90%;
+                    }
+                }
+            }
+
+            .plusOne {
+                display: flex;
+            }
+        }
+    }
+
+    footer {
+        .footerHead {
+            font-size: 32px;
+            .footerActionBtn {
+                font-size: 20px;
+            }
+        }
+
+        .footerInfo {
+            font-size: 14px;
+            .footerLogo {
+                font-size: 20px;
+            }
+
+            .copyright {
+                width: 200px;
+            }
+
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    
+}
+
+@media (min-width:1200px) {
+
+    nav {
+
+        li, a{
+            transition: color .1s ease-in;
+            &:hover {
+                color: $secondary-Color;
+            }
+        }
+
+
+        #phoneNavLogo {
+            font-size: 24px;
+        }
+
+        #phoneNavActionButton {
+            font-size: 20px
+        }
+ 
+    }
+
+    header {
+        @include FlexCenter();
+        justify-content: space-between;
+        margin-top: 150px;
+        text-align: left;
+        padding: 0 25px;
+
+        h1 {
+            font-size: 64px;
+        }
+
+        p {
+            max-width: 580px;
+            font-size: 20px;
+        }
+
+        img {
+            width: 474px;
+            height: 365px;
+        }
+
+    }
+
+    .WhatWeOffer {
+        .headerWhatWeOffer {
+            font-size: 48px;
+            padding-bottom: 74px;
+        }
+
+        .offerMiddle {
+            flex-direction: row-reverse;
+            justify-content: flex-start !important;
+         }
+
+        .Offer  {
+            justify-content: start;
+            .offerPic {
+                width: 300px;
+                height: 400px;
+            }
+
+            .offerInfo {
+                font-size: 20px;
+
+                h2 {
+                    font-size: 32px;
+                }
+
+                hr {
+                    width: 155px;
+                }
+
+                p {
+                    padding-right: 100px;
+                    font-size: 20px;
+                    width: 500px;
+                }
+            }
+
+            
+        }
+    }
+
+    
+
+    .WhatPeopleSay {
+        padding: 70px 0;
+        .headerWhatPeopleSay {
+            font-size: 48px;
+        }
+
+        .reviews {
+            .review {
+                .profilePic {
+                    width: 90px;
+                    height: 90px;
+                }
+
+                .reviewBox {
+                    display: grid;
+                    place-items: center;
+                    width: 350px;
+                    height: 200px;
+
+                    img {
+                        width: 155px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        width: 90%;
+                    }
+                }
+            }
+
+            .plusOne {
+                display: flex;
+            }
+        }
+    }
+
+    footer {
+        .footerHead {
+            font-size: 50px;
+            .footerActionBtn {
+                font-size: 24px;
+                margin-bottom: 100px;
+            }
+        }
+
+        .footerInfo {
+            font-size: 16px;
+            .footerLogo {
+                font-size: 24px;
+            }
+
+            .copyright {
+                width: 250px;
+            }
+
+            svg {
+                width: 27px;
+                height: 27px;
+            }
+        }
+    }
+    
+}

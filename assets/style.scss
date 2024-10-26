@@ -1,0 +1,270 @@
+@import './mixins';
+
+* {
+    @include BigReset();
+    font-family: $primary-Font;
+}
+
+body {
+    background-color: $primary-Color;
+    background-image: $primary-image;
+}
+
+p, h1, h2, h3{
+    margin: 0; //morao sam ovako da skinem margin sa ovih elemenata jer iz nekog razloga idalje postoji 1rem defoult margin na ovim elementima.
+}
+
+nav {
+    @include FlexCenter();
+    justify-content: space-between;
+    padding: 14px 18px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background-color: $primary-Color;
+    
+
+    li, a{
+        text-decoration: none;
+        color: $primary-Text-Color;
+        display: inline;
+        font-family: $nav-Font;
+        font-size: 10px;
+        margin-right: 5px;
+
+        .Active {
+            color: $secondary-Color;
+        }
+    }
+
+
+    #phoneNavLogo {
+        @include logo();
+    }
+
+    #phoneNavActionButton {
+        @include actionBtn();
+    }
+
+    svg {
+        fill: $primary-Text-Color;
+    }
+
+    
+
+
+}
+
+header {
+    
+    text-align: center;
+    color: $primary-Text-Color;
+    height: fit-content;
+    margin-top: 80px;
+
+    h1 {
+        font-weight: bolder ;
+        font-size: 24px;
+    }
+
+    p {
+        font-weight: lighter;
+        font-size: 12px;
+        max-width: 250px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+
+    #phoneHeaderActionButton {
+        @include actionBtn();
+    }
+
+    img {
+        display: none;
+    }
+}
+
+.WhatWeOffer {
+    height: fit-content;
+    padding-top: 40px;
+
+
+    .headerWhatWeOffer {
+        @include h2HeaderMobile();
+        padding-bottom: 25px
+    }
+
+
+    .Offer {
+        @include FlexCenter();
+        margin-left: 16px;
+        
+        .offerPic {
+            width: 75px;
+            height: 102px;
+            border-radius: 10px;
+            margin-right: 14px;
+        }
+
+        .offerInfo {
+            font-size: 11px;
+            color: $primary-Text-Color;
+
+            h2 {
+                font-size: 14px;
+                font-weight: 500;
+                margin: 0;
+            }
+
+            hr {
+                margin: 4px 0;
+                border: 1px solid $secondary-Color;
+                opacity: 1;
+                width: 70px;
+            }
+        }
+    
+    }
+
+    .offerMiddle {
+        margin: 21px 0;
+        margin-left: 16px;
+    }
+
+    
+}
+
+.WhatPeopleSay {
+    height: fit-content;
+    padding-top: 40px;
+
+    .headerWhatPeopleSay {
+        @include h2HeaderMobile();
+        padding-bottom: 25px;
+    }
+
+    .reviews {
+        @include FlexCenter();
+        gap: 25px;
+
+        .review{
+            @include FlexCenter();
+            flex-direction: column;
+            gap: 9px;
+            .profilePic {
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                text-align: center;
+            }
+
+            .reviewBox {
+                text-align: center;
+                width: 122px;
+                height: 108px;
+                border: none;
+                border-radius: 16px;
+                box-shadow: 0 4px 12px rgba($color: #000000, $alpha: 0.3);
+                background: linear-gradient(0deg, rgba(19,73,45,0.9) 37%, rgba(19,73,45,0.75) 66%);
+
+                img {
+                    padding-top: 19px;
+                    padding-bottom: 7px;
+                }
+
+                p {
+                    width: 100px;
+                    margin: 0 auto;
+                    font-size: 7px;
+                    color: $primary-Text-Color;
+
+                }
+            }
+        }
+
+        .plusOne {
+            display: none;
+        }
+    }
+   
+
+}
+
+footer {
+    background: $primary-Color;
+    padding: 20px 10px 10px;
+    height: fit-content;
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+
+    .footerHead {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+        color: $primary-Text-Color;
+        padding-bottom: 35px;
+
+        p {
+            padding-bottom: 5px;
+        }
+
+        .footerActionBtn {
+            @include actionBtn();
+            font-weight: bolder;
+            margin-bottom: 35px;
+        }
+
+
+    }
+
+    .footerInfo {
+        color: $primary-Text-Color;
+        font-size: 7px;
+     
+        p{
+            display: inline
+        }
+        .footerLogo {
+            @include logo();
+            font-size: 7px;
+            position: absolute; //Razlog zabog kog koristim position absolute je sto display flex nece raditi jer je razmak izmedju footerContactInfo i copyright klase manji nego razmak izmedju copyright i footerLogo.
+            left: 10px;
+            bottom: 10px
+        }
+
+        .copyright {
+            position: absolute; //Razlog zabog kog koristim position absolute je sto display flex nece raditi jer je razmak izmedju footerContactInfo i copyright klase manji nego razmak izmedju copyright i footerLogo.
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            bottom: 10px
+        }
+
+       
+
+        .footerContactInfo {
+            @include FlexCenter();
+            flex-direction: column;
+            align-items: start;
+            gap: 8px;
+            position: absolute; //Razlog zabog kog koristim position absolute je sto display flex nece raditi jer je razmak izmedju footerContactInfo i copyright klase manji nego razmak izmedju copyright i footerLogo.
+            right: 10px;
+            bottom: 10px;
+
+            .footerContact {
+                @include FlexCenter();
+                gap: 8px;
+            }
+        }
+    }
+
+}
+
+
+    
+
+

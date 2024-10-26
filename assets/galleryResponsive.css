@@ -1,0 +1,98 @@
+@media (min-width: 600px) {
+  nav li, nav a {
+    font-size: 20px;
+  }
+  nav #phoneNavLogo {
+    font-size: 16px;
+  }
+  nav #phoneNavActionButton {
+    font-size: 16px;
+  }
+  header .headerBox {
+    margin-left: -15px;
+    padding-top: 50px;
+  }
+  header .headerBox h1 {
+    font-size: 24px;
+  }
+  header .headerBox hr {
+    width: 500px;
+  }
+  footer .footerHead {
+    font-size: 24px;
+  }
+  footer .footerHead .footerActionBtn {
+    font-size: 16px;
+  }
+  footer .footerInfo {
+    font-size: 10px;
+  }
+  footer .footerInfo .footerLogo {
+    font-size: 16px;
+  }
+  footer .footerInfo .copyright {
+    width: 150px;
+  }
+  footer .footerInfo svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (min-width: 900px) {
+  nav #phoneNavLogo {
+    font-size: 20px;
+  }
+  footer .footerHead {
+    font-size: 32px;
+  }
+  footer .footerHead .footerActionBtn {
+    font-size: 20px;
+  }
+  footer .footerInfo {
+    font-size: 14px;
+  }
+  footer .footerInfo .footerLogo {
+    font-size: 20px;
+  }
+  footer .footerInfo .copyright {
+    width: 200px;
+  }
+  footer .footerInfo svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  nav li, nav a {
+    transition: color 0.1s ease-in;
+  }
+  nav li:hover, nav a:hover {
+    color: #D9D217;
+  }
+  nav #phoneNavLogo {
+    font-size: 24px;
+  }
+  nav #phoneNavActionButton {
+    font-size: 20px;
+  }
+  footer .footerHead {
+    font-size: 50px;
+  }
+  footer .footerHead .footerActionBtn {
+    font-size: 24px;
+    margin-bottom: 100px;
+  }
+  footer .footerInfo {
+    font-size: 16px;
+  }
+  footer .footerInfo .footerLogo {
+    font-size: 24px;
+  }
+  footer .footerInfo .copyright {
+    width: 250px;
+  }
+  footer .footerInfo svg {
+    width: 27px;
+    height: 27px;
+  }
+}/*# sourceMappingURL=galleryResponsive.css.map */

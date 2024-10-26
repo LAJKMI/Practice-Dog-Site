@@ -1,0 +1,189 @@
+@import './mixins';
+
+* {
+    @include BigReset();
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+}
+
+body {
+    background-color: $primary-Color;
+    background-image: $primary-image;
+    height: fit-content;
+}
+
+nav {
+    @include FlexCenter();
+    justify-content: space-between;
+    padding: 14px 18px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background-color: $primary-Color;
+    
+
+    li, a{
+        text-decoration: none;
+        color: $primary-Text-Color;
+        display: inline;
+        font-family: $nav-Font;
+        font-size: 10px;
+        margin-right: 5px;
+
+        .Active {
+            color: $secondary-Color;
+        }
+    }
+
+
+    #phoneNavLogo {
+        @include logo();
+    }
+
+    #phoneNavActionButton {
+        @include actionBtn();
+    }
+
+    svg {
+        fill: $primary-Text-Color;
+    }
+
+    
+
+
+}
+
+h1 {
+    font-size: 16px;
+    color: $primary-Text-Color;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+form {
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+  
+    input[type="date"] {
+        background: transparent;
+        color: $primary-Text-Color;
+        font-size: 11px;
+        font-weight: 500;
+        border: none;
+        width: 70px;
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+    // Ovo je ovde da bi skinuo date picker sa inputa, nisam siguran da ovo radi na svim pretrazivacima
+    // Postoji nacin da se skine i sa JavaScript-om, a mogo bi da se stavi i samo input type:text ali ovo mi je najlakse sad u datom trenutku
+    // A sobzirom da je samo vezba vrsi poso.
+    input[type="date"]::-webkit-inner-spin-button,
+    input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    }
+
+    label {
+        font-size: 11px;
+        color: $primary-Text-Color;
+        font-weight: 500;
+    }
+
+    input[type='text'], input[type='email'] {
+        border: none;
+        border-radius: 5px;
+        width: 90%;
+        background: $input-Color;
+        color: $primary-Text-Color;
+        font-size: 11px;
+        padding: 10px;
+
+        &::placeholder {
+            color: $input-Text-Color;
+            font-weight: 500;
+            font-size: 11px;
+            padding: 10px 5px;
+        }
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+
+    .submit {
+        @include actionBtn();
+        width: 90%;
+        margin-top: 10px;
+    }
+    
+}
+
+
+
+
+
+footer {
+    background: $primary-Color;
+    padding: 40px 10px 10px;
+    height: fit-content;
+    margin-top: 130px;
+    position: sticky;
+    text-align: center;
+
+    .footerInfo {
+        color: $primary-Text-Color;
+        font-size: 7px;
+     
+        p{
+            display: inline
+        }
+        .footerLogo {
+            @include logo();
+            font-size: 7px;
+            position: absolute; //Razlog zabog kog koristim position absolute je sto display flex nece raditi jer je razmak izmedju footerContactInfo i copyright klase manji nego razmak izmedju copyright i footerLogo.
+            left: 10px;
+            bottom: 10px
+        }
+
+        .copyright {
+            position: absolute; //Razlog zabog kog koristim position absolute je sto display flex nece raditi jer je razmak izmedju footerContactInfo i copyright klase manji nego razmak izmedju copyright i footerLogo.
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            bottom: 10px
+        }
+
+       
+
+        .footerContactInfo {
+            @include FlexCenter();
+            flex-direction: column;
+            align-items: start;
+            gap: 8px;
+            position: absolute; //Razlog zabog kog koristim position absolute je sto display flex nece raditi jer je razmak izmedju footerContactInfo i copyright klase manji nego razmak izmedju copyright i footerLogo.
+            right: 10px;
+            bottom: 10px;
+
+            .footerContact {
+                @include FlexCenter();
+                gap: 8px;
+            }
+        }
+    }
+
+}

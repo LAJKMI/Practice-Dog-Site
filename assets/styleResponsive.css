@@ -1,0 +1,275 @@
+@media (min-width: 600px) {
+  nav li, nav a {
+    font-size: 20px;
+  }
+  nav #phoneNavLogo {
+    font-size: 16px;
+  }
+  nav #phoneNavActionButton {
+    font-size: 16px;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    text-align: left;
+    padding: 0 25px;
+  }
+  header p {
+    margin: 10px 0;
+    max-width: 310px;
+  }
+  header img {
+    width: 240px;
+    height: 190px;
+    display: inline;
+  }
+  .WhatWeOffer .headerWhatWeOffer {
+    font-size: 24px;
+  }
+  .WhatWeOffer .Offer .offerPic {
+    width: 150px;
+    height: 205px;
+  }
+  .WhatWeOffer .Offer .offerInfo {
+    font-size: 15px;
+  }
+  .WhatWeOffer .Offer .offerInfo h2 {
+    font-size: 18px;
+  }
+  .WhatWeOffer .Offer .offerInfo p {
+    padding-right: 100px;
+  }
+  .WhatPeopleSay .headerWhatPeopleSay {
+    font-size: 24px;
+  }
+  .WhatPeopleSay .reviews .review .profilePic {
+    width: 67px;
+    height: 67px;
+  }
+  .WhatPeopleSay .reviews .review .reviewBox {
+    width: 260px;
+    height: 140px;
+  }
+  .WhatPeopleSay .reviews .review .reviewBox img {
+    width: 67px;
+  }
+  .WhatPeopleSay .reviews .review .reviewBox p {
+    font-size: 12px;
+    width: 90%;
+  }
+  footer .footerHead {
+    font-size: 24px;
+  }
+  footer .footerHead .footerActionBtn {
+    font-size: 16px;
+  }
+  footer .footerInfo {
+    font-size: 10px;
+  }
+  footer .footerInfo .footerLogo {
+    font-size: 16px;
+  }
+  footer .footerInfo .copyright {
+    width: 150px;
+  }
+  footer .footerInfo svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (min-width: 900px) {
+  nav #phoneNavLogo {
+    font-size: 20px;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    text-align: left;
+    padding: 0 25px;
+  }
+  header h1 {
+    font-size: 32px;
+  }
+  header p {
+    max-width: 400px;
+    font-size: 14px;
+  }
+  header img {
+    width: 340px;
+    height: 240px;
+  }
+  header #phoneHeaderActionButton {
+    font-size: 20px;
+  }
+  .WhatWeOffer .headerWhatWeOffer {
+    font-size: 32px;
+  }
+  .WhatWeOffer .Offer .offerPic {
+    width: 250px;
+    height: 305px;
+  }
+  .WhatWeOffer .Offer .offerInfo {
+    font-size: 20px;
+  }
+  .WhatWeOffer .Offer .offerInfo h2 {
+    font-size: 24px;
+  }
+  .WhatWeOffer .Offer .offerInfo p {
+    padding-right: 100px;
+  }
+  .WhatPeopleSay .headerWhatPeopleSay {
+    font-size: 24px;
+  }
+  .WhatPeopleSay .reviews .review .profilePic {
+    width: 67px;
+    height: 67px;
+  }
+  .WhatPeopleSay .reviews .review .reviewBox {
+    width: 260px;
+    height: 140px;
+  }
+  .WhatPeopleSay .reviews .review .reviewBox img {
+    width: 67px;
+  }
+  .WhatPeopleSay .reviews .review .reviewBox p {
+    font-size: 12px;
+    width: 90%;
+  }
+  .WhatPeopleSay .reviews .plusOne {
+    display: flex;
+  }
+  footer .footerHead {
+    font-size: 32px;
+  }
+  footer .footerHead .footerActionBtn {
+    font-size: 20px;
+  }
+  footer .footerInfo {
+    font-size: 14px;
+  }
+  footer .footerInfo .footerLogo {
+    font-size: 20px;
+  }
+  footer .footerInfo .copyright {
+    width: 200px;
+  }
+  footer .footerInfo svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  nav li, nav a {
+    transition: color 0.1s ease-in;
+  }
+  nav li:hover, nav a:hover {
+    color: #D9D217;
+  }
+  nav #phoneNavLogo {
+    font-size: 24px;
+  }
+  nav #phoneNavActionButton {
+    font-size: 20px;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+    text-align: left;
+    padding: 0 25px;
+  }
+  header h1 {
+    font-size: 64px;
+  }
+  header p {
+    max-width: 580px;
+    font-size: 20px;
+  }
+  header img {
+    width: 474px;
+    height: 365px;
+  }
+  .WhatWeOffer .headerWhatWeOffer {
+    font-size: 48px;
+    padding-bottom: 74px;
+  }
+  .WhatWeOffer .offerMiddle {
+    flex-direction: row-reverse;
+    justify-content: flex-start !important;
+  }
+  .WhatWeOffer .Offer {
+    justify-content: start;
+  }
+  .WhatWeOffer .Offer .offerPic {
+    width: 300px;
+    height: 400px;
+  }
+  .WhatWeOffer .Offer .offerInfo {
+    font-size: 20px;
+  }
+  .WhatWeOffer .Offer .offerInfo h2 {
+    font-size: 32px;
+  }
+  .WhatWeOffer .Offer .offerInfo hr {
+    width: 155px;
+  }
+  .WhatWeOffer .Offer .offerInfo p {
+    padding-right: 100px;
+    font-size: 20px;
+    width: 500px;
+  }
+  .WhatPeopleSay {
+    padding: 70px 0;
+  }
+  .WhatPeopleSay .headerWhatPeopleSay {
+    font-size: 48px;
+  }
+  .WhatPeopleSay .reviews .review .profilePic {
+    width: 90px;
+    height: 90px;
+  }
+  .WhatPeopleSay .reviews .review .reviewBox {
+    display: grid;
+    place-items: center;
+    width: 350px;
+    height: 200px;
+  }
+  .WhatPeopleSay .reviews .review .reviewBox img {
+    width: 155px;
+  }
+  .WhatPeopleSay .reviews .review .reviewBox p {
+    font-size: 16px;
+    width: 90%;
+  }
+  .WhatPeopleSay .reviews .plusOne {
+    display: flex;
+  }
+  footer .footerHead {
+    font-size: 50px;
+  }
+  footer .footerHead .footerActionBtn {
+    font-size: 24px;
+    margin-bottom: 100px;
+  }
+  footer .footerInfo {
+    font-size: 16px;
+  }
+  footer .footerInfo .footerLogo {
+    font-size: 24px;
+  }
+  footer .footerInfo .copyright {
+    width: 250px;
+  }
+  footer .footerInfo svg {
+    width: 27px;
+    height: 27px;
+  }
+}/*# sourceMappingURL=styleResponsive.css.map */

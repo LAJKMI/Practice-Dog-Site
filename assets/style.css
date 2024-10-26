@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #18603B;
+  background-image: url(images/noisy-background\ 1.png);
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  background-color: #18603B;
+}
+nav li, nav a {
+  text-decoration: none;
+  color: white;
+  display: inline;
+  font-family: "Abyssinica SIL", serif;
+  font-size: 10px;
+  margin-right: 5px;
+}
+nav li .Active, nav a .Active {
+  color: #D9D217;
+}
+nav #phoneNavLogo {
+  text-align: center;
+  color: white;
+  font-family: "Lily Script One", system-ui;
+  font-size: 12px;
+  margin: 0;
+}
+nav #phoneNavActionButton {
+  padding: 5px 10px;
+  color: #18603B;
+  border: 1px white solid;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 37%, rgba(255, 255, 255, 0.75) 66%);
+  border-radius: 7px;
+  font-weight: bolder;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+nav svg {
+  fill: white;
+}
+
+header {
+  text-align: center;
+  color: white;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 80px;
+}
+header h1 {
+  font-weight: bolder;
+  font-size: 24px;
+}
+header p {
+  font-weight: lighter;
+  font-size: 12px;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+header #phoneHeaderActionButton {
+  padding: 5px 10px;
+  color: #18603B;
+  border: 1px white solid;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 37%, rgba(255, 255, 255, 0.75) 66%);
+  border-radius: 7px;
+  font-weight: bolder;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+header img {
+  display: none;
+}
+
+.WhatWeOffer {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 40px;
+}
+.WhatWeOffer .headerWhatWeOffer {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.WhatWeOffer .Offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px;
+}
+.WhatWeOffer .Offer .offerPic {
+  width: 75px;
+  height: 102px;
+  border-radius: 10px;
+  margin-right: 14px;
+}
+.WhatWeOffer .Offer .offerInfo {
+  font-size: 11px;
+  color: white;
+}
+.WhatWeOffer .Offer .offerInfo h2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+.WhatWeOffer .Offer .offerInfo hr {
+  margin: 4px 0;
+  border: 1px solid #D9D217;
+  opacity: 1;
+  width: 70px;
+}
+.WhatWeOffer .offerMiddle {
+  margin: 21px 0;
+  margin-left: 16px;
+}
+
+.WhatPeopleSay {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 40px;
+}
+.WhatPeopleSay .headerWhatPeopleSay {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.WhatPeopleSay .reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.WhatPeopleSay .reviews .review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+}
+.WhatPeopleSay .reviews .review .profilePic {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-align: center;
+}
+.WhatPeopleSay .reviews .review .reviewBox {
+  text-align: center;
+  width: 122px;
+  height: 108px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, rgba(19, 73, 45, 0.9) 37%, rgba(19, 73, 45, 0.75) 66%);
+}
+.WhatPeopleSay .reviews .review .reviewBox img {
+  padding-top: 19px;
+  padding-bottom: 7px;
+}
+.WhatPeopleSay .reviews .review .reviewBox p {
+  width: 100px;
+  margin: 0 auto;
+  font-size: 7px;
+  color: white;
+}
+.WhatPeopleSay .reviews .plusOne {
+  display: none;
+}
+
+footer {
+  background: #18603B;
+  padding: 20px 10px 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 40px;
+  position: relative;
+  text-align: center;
+}
+footer .footerHead {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  padding-bottom: 35px;
+}
+footer .footerHead p {
+  padding-bottom: 5px;
+}
+footer .footerHead .footerActionBtn {
+  padding: 5px 10px;
+  color: #18603B;
+  border: 1px white solid;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 37%, rgba(255, 255, 255, 0.75) 66%);
+  border-radius: 7px;
+  font-weight: bolder;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  margin-bottom: 35px;
+}
+footer .footerInfo {
+  color: white;
+  font-size: 7px;
+}
+footer .footerInfo p {
+  display: inline;
+}
+footer .footerInfo .footerLogo {
+  text-align: center;
+  color: white;
+  font-family: "Lily Script One", system-ui;
+  font-size: 12px;
+  margin: 0;
+  font-size: 7px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+footer .footerInfo .copyright {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  bottom: 10px;
+}
+footer .footerInfo .footerContactInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+footer .footerInfo .footerContactInfo .footerContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}/*# sourceMappingURL=style.css.map */

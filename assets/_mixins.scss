@@ -1,0 +1,54 @@
+
+    $primary-Color: #18603B;
+    $primary-Text-Color: #ffff;
+    $secondary-Color: #D9D217;
+    $input-Color: #185536;
+    $input-Text-Color: #A0A0A0;
+    $primary-Font: "Roboto", sans-serif;
+    $logo-Font: "Lily Script One", system-ui;
+    $nav-Font: "Abyssinica SIL", serif;
+    $sub-Hero-Font: "Aboreto", system-ui;
+    $primary-image: url(images/noisy-background\ 1.png);
+
+
+@mixin logo {
+    text-align: center;
+    color: $primary-Text-Color;
+    font-family: $logo-Font;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+
+@mixin h2HeaderMobile {
+    font-size: 20px;
+    font-weight: 500;
+    color: $primary-Text-Color;
+    text-align: center;
+}
+
+
+@mixin actionBtn {
+    padding: 5px 10px;
+    color: $primary-Color;
+    border: 1px white solid;
+    background: linear-gradient(0deg, rgba(255,255,255,0.9) 37%, rgba(255,255,255,0.75) 66%);
+    border-radius: 7px;
+    font-weight: bolder;
+    font-size: 13px;
+    font-family: $primary-Font;
+    box-shadow: 0 4px 8px rgba($color: #000000, $alpha: 0.3);
+}
+
+@mixin BigReset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin FlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

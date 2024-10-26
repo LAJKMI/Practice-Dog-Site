@@ -1,0 +1,196 @@
+@import './mixins';
+
+@media (min-width:600px) {
+
+    nav {
+
+        li, a {
+            font-size: 20px;
+        }
+        #phoneNavLogo {
+            font-size: 16px;
+        }
+
+        #phoneNavActionButton {
+            font-size: 16px;
+        }
+    }
+
+    h1 {
+        font-size: 24px;
+        padding-bottom: 20px;
+        padding-top: 150px;
+    }
+
+    form {
+        input[type="date"] {
+            font-size: 16px;
+            width: 100px;
+        }
+
+        label {
+            font-size: 16px;
+        }
+
+        input[type='text'], input[type='email'] {
+           font-size: 16px;
+    
+            &::placeholder {
+                font-size: 16px;
+            }
+    
+        }
+
+        .submit {
+            font-size: 16px;
+        }
+    }
+    
+    
+    footer {
+        padding-top: 60px;
+        .footerHead {
+            font-size: 24px;
+            .footerActionBtn {
+                font-size: 16px;
+            }
+        }
+
+        .footerInfo {
+            font-size: 10px;
+            .footerLogo {
+                font-size: 16px;
+            }
+
+            .copyright {
+                width: 150px;
+            }
+
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    
+}
+
+@media (min-width:900px) {
+
+    nav {
+        #phoneNavLogo {
+            font-size: 20px;
+        }
+ 
+    }
+
+ 
+
+    footer {
+        .footerHead {
+            font-size: 32px;
+            .footerActionBtn {
+                font-size: 20px;
+            }
+        }
+
+        .footerInfo {
+            font-size: 14px;
+            .footerLogo {
+                font-size: 20px;
+            }
+
+            .copyright {
+                width: 200px;
+            }
+
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    
+}
+
+@media (min-width:1200px) {
+
+    nav {
+
+        li, a{
+            transition: color .1s ease-in;
+            &:hover {
+                color: $secondary-Color;
+            }
+        }
+
+
+        #phoneNavLogo {
+            font-size: 24px;
+        }
+
+        #phoneNavActionButton {
+            font-size: 20px
+        }
+ 
+    }
+
+    h1 {
+        font-size: 32px;
+        padding-bottom: 20px;
+        padding-top: 150px;
+    }
+
+    form {
+        input[type="date"] {
+            font-size: 24px;
+            width: 150px;
+        }
+
+        label {
+            font-size: 24px;
+        }
+
+        input[type='text'], input[type='email'] {
+           font-size: 24px;
+    
+            &::placeholder {
+                font-size: 24px;
+            }
+    
+        }
+
+        .submit {
+            font-size: 24px;
+        }
+    }
+    
+
+    footer {
+        padding-top: 100px;
+        .footerHead {
+            font-size: 50px;
+            .footerActionBtn {
+                font-size: 24px;
+                margin-bottom: 100px;
+            }
+        }
+
+        .footerInfo {
+            font-size: 16px;
+            .footerLogo {
+                font-size: 24px;
+            }
+
+            .copyright {
+                width: 250px;
+            }
+
+            svg {
+                width: 27px;
+                height: 27px;
+            }
+        }
+    }
+    
+}

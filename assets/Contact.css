@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+body {
+  background-color: #18603B;
+  background-image: url(images/noisy-background\ 1.png);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  background-color: #18603B;
+}
+nav li, nav a {
+  text-decoration: none;
+  color: white;
+  display: inline;
+  font-family: "Abyssinica SIL", serif;
+  font-size: 10px;
+  margin-right: 5px;
+}
+nav li .Active, nav a .Active {
+  color: #D9D217;
+}
+nav #phoneNavLogo {
+  text-align: center;
+  color: white;
+  font-family: "Lily Script One", system-ui;
+  font-size: 12px;
+  margin: 0;
+}
+nav #phoneNavActionButton {
+  padding: 5px 10px;
+  color: #18603B;
+  border: 1px white solid;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 37%, rgba(255, 255, 255, 0.75) 66%);
+  border-radius: 7px;
+  font-weight: bolder;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+nav svg {
+  fill: white;
+}
+
+h1 {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 100px;
+}
+
+form {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+form input[type=date] {
+  background: transparent;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  border: none;
+  width: 70px;
+}
+form input[type=date]:focus {
+  border: none;
+  outline: none;
+}
+form input[type=date]::-webkit-inner-spin-button,
+form input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+form label {
+  font-size: 11px;
+  color: white;
+  font-weight: 500;
+}
+form input[type=text], form input[type=email] {
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  background: #185536;
+  color: white;
+  font-size: 11px;
+  padding: 10px;
+}
+form input[type=text]::-moz-placeholder, form input[type=email]::-moz-placeholder {
+  color: #A0A0A0;
+  font-weight: 500;
+  font-size: 11px;
+  padding: 10px 5px;
+}
+form input[type=text]::placeholder, form input[type=email]::placeholder {
+  color: #A0A0A0;
+  font-weight: 500;
+  font-size: 11px;
+  padding: 10px 5px;
+}
+form input[type=text]:focus, form input[type=email]:focus {
+  border: none;
+  outline: none;
+}
+form .submit {
+  padding: 5px 10px;
+  color: #18603B;
+  border: 1px white solid;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 37%, rgba(255, 255, 255, 0.75) 66%);
+  border-radius: 7px;
+  font-weight: bolder;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  margin-top: 10px;
+}
+
+footer {
+  background: #18603B;
+  padding: 40px 10px 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 130px;
+  position: sticky;
+  text-align: center;
+}
+footer .footerInfo {
+  color: white;
+  font-size: 7px;
+}
+footer .footerInfo p {
+  display: inline;
+}
+footer .footerInfo .footerLogo {
+  text-align: center;
+  color: white;
+  font-family: "Lily Script One", system-ui;
+  font-size: 12px;
+  margin: 0;
+  font-size: 7px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+footer .footerInfo .copyright {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  bottom: 10px;
+}
+footer .footerInfo .footerContactInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+footer .footerInfo .footerContactInfo .footerContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}/*# sourceMappingURL=Contact.css.map */

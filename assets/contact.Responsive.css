@@ -1,0 +1,142 @@
+@media (min-width: 600px) {
+  nav li, nav a {
+    font-size: 20px;
+  }
+  nav #phoneNavLogo {
+    font-size: 16px;
+  }
+  nav #phoneNavActionButton {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    padding-top: 150px;
+  }
+  form input[type=date] {
+    font-size: 16px;
+    width: 100px;
+  }
+  form label {
+    font-size: 16px;
+  }
+  form input[type=text], form input[type=email] {
+    font-size: 16px;
+  }
+  form input[type=text]::-moz-placeholder, form input[type=email]::-moz-placeholder {
+    font-size: 16px;
+  }
+  form input[type=text]::placeholder, form input[type=email]::placeholder {
+    font-size: 16px;
+  }
+  form .submit {
+    font-size: 16px;
+  }
+  footer {
+    padding-top: 60px;
+  }
+  footer .footerHead {
+    font-size: 24px;
+  }
+  footer .footerHead .footerActionBtn {
+    font-size: 16px;
+  }
+  footer .footerInfo {
+    font-size: 10px;
+  }
+  footer .footerInfo .footerLogo {
+    font-size: 16px;
+  }
+  footer .footerInfo .copyright {
+    width: 150px;
+  }
+  footer .footerInfo svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (min-width: 900px) {
+  nav #phoneNavLogo {
+    font-size: 20px;
+  }
+  footer .footerHead {
+    font-size: 32px;
+  }
+  footer .footerHead .footerActionBtn {
+    font-size: 20px;
+  }
+  footer .footerInfo {
+    font-size: 14px;
+  }
+  footer .footerInfo .footerLogo {
+    font-size: 20px;
+  }
+  footer .footerInfo .copyright {
+    width: 200px;
+  }
+  footer .footerInfo svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  nav li, nav a {
+    transition: color 0.1s ease-in;
+  }
+  nav li:hover, nav a:hover {
+    color: #D9D217;
+  }
+  nav #phoneNavLogo {
+    font-size: 24px;
+  }
+  nav #phoneNavActionButton {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 32px;
+    padding-bottom: 20px;
+    padding-top: 150px;
+  }
+  form input[type=date] {
+    font-size: 24px;
+    width: 150px;
+  }
+  form label {
+    font-size: 24px;
+  }
+  form input[type=text], form input[type=email] {
+    font-size: 24px;
+  }
+  form input[type=text]::-moz-placeholder, form input[type=email]::-moz-placeholder {
+    font-size: 24px;
+  }
+  form input[type=text]::placeholder, form input[type=email]::placeholder {
+    font-size: 24px;
+  }
+  form .submit {
+    font-size: 24px;
+  }
+  footer {
+    padding-top: 100px;
+  }
+  footer .footerHead {
+    font-size: 50px;
+  }
+  footer .footerHead .footerActionBtn {
+    font-size: 24px;
+    margin-bottom: 100px;
+  }
+  footer .footerInfo {
+    font-size: 16px;
+  }
+  footer .footerInfo .footerLogo {
+    font-size: 24px;
+  }
+  footer .footerInfo .copyright {
+    width: 250px;
+  }
+  footer .footerInfo svg {
+    width: 27px;
+    height: 27px;
+  }
+}/*# sourceMappingURL=contact.Responsive.css.map */
